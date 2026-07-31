@@ -14,7 +14,7 @@ env.config();
 
 app.use(
   session({
-    secret: "",
+    secret: "",//add ur own 
     resave: false,
     saveUninitialized: true,
   })
@@ -26,6 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 const db = new pg.Client({
+  //add your own data
   user: "",
   host: "",
   database: "",
